@@ -1,4 +1,4 @@
-export default {
+export default theme => ({
   App: {
     textAlign: 'center'
   },
@@ -9,7 +9,7 @@ export default {
   },
 
   AppHeader: {
-    backgroundColor: props => props.mode === 'light' ?  'gray' : 'black',
+    backgroundColor: theme.primary,
     minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
@@ -41,4 +41,4 @@ export default {
       animationDirection: 'linear'
     }
   }
-}
+})
