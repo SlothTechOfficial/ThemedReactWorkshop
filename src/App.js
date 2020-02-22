@@ -1,18 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import styles from './AppStyles';
-import jss from 'jss'
-import preset from 'jss-preset-default'
-jss.setup(preset())
+import withStyles from 'react-jss';
 
-const sheet = jss.createStyleSheet(styles);
-sheet.attach();
-
-function App() {
-  const { classes } = sheet;
-
-  console.log(classes)
-
+function App({classes}) {
   return (
     <div className={classes.App}>
       <header className={classes.AppHeader}>
@@ -33,4 +24,4 @@ function App() {
   );
 }
 
-export default App;
+export default withStyles(styles)(App);
