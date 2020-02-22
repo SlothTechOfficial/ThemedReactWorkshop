@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import styles from './AppStyles';
 import withStyles from 'react-jss';
 
-function App({classes}) {
+function App({classes, mode='light'}) {
   return (
     <div className={classes.App}>
       <header className={classes.AppHeader}>

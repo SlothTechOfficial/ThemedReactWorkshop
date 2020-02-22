@@ -9,7 +9,7 @@ export default {
   },
 
   AppHeader: {
-    backgroundColor: '#282c34',
+    backgroundColor: props => props.mode === 'light' ?  'gray' : 'black',
     minHeight: '100vh',
     display: 'flex',
     flexDirection: 'column',
